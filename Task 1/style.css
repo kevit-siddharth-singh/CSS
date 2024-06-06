@@ -1,0 +1,98 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: #eee;
+  user-select: none;
+}
+
+body {
+  /* background-image: url("Siddharth.jpeg"); */
+  background-color: rgb(0, 0, 0);
+  position: static;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+
+.card {
+  height: 50%;
+  position: absolute;
+  top: 280px;
+  left: 1000px;
+  background-color: rgb(22, 20, 25);
+  width: 17%;
+  border-radius: 5px;
+
+  transition: transform 0.5s;
+
+  box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 10px 0px,
+    rgba(226, 221, 221, 0.5) 0px 2px 25px 0px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.image:hover {
+  transform: scale(0.95);
+  transition: transform 0.2s;
+  box-shadow: rgba(255, 255, 255, 0.8) 0px 2px 10px 0px,
+    rgba(123, 27, 248, 0.5) 0px 2px 25px 0px;
+}
+
+.card img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.image {
+  transition: transform 0.2s;
+  margin: 10px;
+}
+
+.dev {
+  color: #a72ef8;
+  text-align: center;
+}
+
+.des {
+  text-align: center;
+  height: 44%;
+}
+
+.title {
+  margin: 16px;
+}
+
+
+.content{
+font-size: 19px;
+margin: 20px;
+
+
+}
+.footer button {
+  background-color: #000;
+  border-radius: 10px;
+  font-size: 22px;
+  padding:10px;
+  position: absolute;
+  top: 520px;
+  left: 150px;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #a72ef8;
+}
+
+.title:hover{
+color: #FB4B00;
+
+}
