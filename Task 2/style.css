@@ -148,6 +148,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .article-container {
   display: flex;
@@ -189,4 +190,71 @@ button {
   font-size: 14px;
 
   color: var(--color-midgrey);
+}
+
+.container {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-card-img {
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5em;
+  width: 69%;
+  padding-left: 2em;
+}
+
+.article-card-img img {
+  width: 90%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-div {
+  gap: 5em;
+  width: 65.59%;
+  display: flex;
+}
+
+.wrapper-header {
+  display: flex;
+  gap: 1em;
+  color: var(--color-midgrey);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.wrapper-header div {
+  display: flex;
+  gap: 0.1em;
+}
+
+.wrapper-header svg {
+  color: var(--color-pink);
+}
+.wrapper-title {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.wrapper-desc {
+  font-size: 16px;
+  margin-bottom: 0.5em;
+}
+
+.wrapper-footer {
+  margin-top: 0.5em;
+  font-size: 13px;
+  color: var(--color-secondary-text);
 }
