@@ -7,6 +7,7 @@
 }
 
 :root {
+  --color-pink: #ff0095;
   --color-green: #a4d037;
   --color-yellow: #fecd35;
   --color-red: #f05230;
@@ -45,7 +46,7 @@
   align-items: center;
 }
 .tags {
-  cursor: pointer;  
+  cursor: pointer;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -115,4 +116,25 @@ button {
   font-size: 25px;
   left: -28%;
   color: white;
+}
+
+.subscribe-fixed-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 91%;
+  left: 91%;
+  gap: 10px;
+  position: fixed;
+  background-color: var(--color-pink);
+  padding: 1em;
+  border-radius: 999px;
+}
+
+.floating-btn {
+  color: white;
+}
+.subscribe-fixed-text {
+  font-size: 17px;
+  color: #e1e1e1;
 }
