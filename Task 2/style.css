@@ -138,3 +138,55 @@ button {
   font-size: 17px;
   color: #e1e1e1;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.article-container {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  flex-wrap: wrap;
+
+  margin-top: 3em;
+  width: 70%;
+}
+.article-image {
+  background-image: url(assets/welcome-to-ghost.png);
+  background-size: cover;
+  height: 400px;
+  width: 800px;
+}
+
+.article-data {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 30%;
+  /* background-color: #ff0095; */
+}
+
+.article-data-paragraph {
+  font-size: 44px;
+
+  font-weight: 600;
+  color: var(--color-darkmode);
+}
+.article-data-header {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--color-midgrey);
+}
+
+.article-data-footer {
+  font-size: 14px;
+
+  color: var(--color-midgrey);
+}
