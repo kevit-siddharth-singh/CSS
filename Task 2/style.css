@@ -258,3 +258,91 @@ button {
   font-size: 13px;
   color: var(--color-secondary-text);
 }
+
+
+.cards-wrapper {
+  width: 65.59%;
+  /* background-color: greenyellow; For Debugging */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  height: 100%;
+  
+
+  
+  }
+  
+  .cards {
+    margin-top: 3em;
+    /* background-color: #ff0095; For Debugging */
+    display: flex;
+    justify-content: center;
+   
+   
+    
+  }
+.card-image img {
+  width: 94%;
+}
+
+.card-data {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.card-data-header {
+  font-size: 16px;
+  color: var(--color-secondary-text);
+  font-weight: 900;
+  margin-bottom: 0.8em;
+}
+
+.card-image {
+  position: relative;
+}
+.locked-data {
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 0.3em;
+  font-weight: 500;
+  color: white;
+  top: 44%;
+  left: 28%;
+}
+.image2 {
+  filter: brightness(50%) blur(4px);
+}
+
+.card-data-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 0.4em;
+}
+
+.card-data-desc {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 0.9em;
+  line-height: 23px;
+}
+.card-data-footer {
+  font-size: 15px;
+  color: var(--color-secondary-text);
+}
+
+.img-resize {
+  height: 210px;
+}
+
+.img1 {
+  height: 225px;
+}
+
+.pinktext {
+  display: flex;
+  color: var(--color-pink);
+  
+}
