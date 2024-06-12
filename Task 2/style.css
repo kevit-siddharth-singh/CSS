@@ -259,7 +259,6 @@ button {
   color: var(--color-secondary-text);
 }
 
-
 .cards-wrapper {
   width: 65.59%;
   /* background-color: greenyellow; For Debugging */
@@ -267,20 +266,14 @@ button {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   height: 100%;
-  
+}
 
-  
-  }
-  
-  .cards {
-    margin-top: 3em;
-    /* background-color: #ff0095; For Debugging */
-    display: flex;
-    justify-content: center;
-   
-   
-    
-  }
+.cards {
+  margin-top: 3em;
+  /* background-color: #ff0095; For Debugging */
+  display: flex;
+  justify-content: center;
+}
 .card-image img {
   width: 94%;
 }
@@ -344,5 +337,29 @@ button {
 .pinktext {
   display: flex;
   color: var(--color-pink);
-  
+}
+
+.footer-wrapper {
+  font-size: 14px;
+  padding: 3.5rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
+  color: white;
+  background-color: black;
+  height: 16.4em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-data {
+  cursor: pointer;
+  color: var(--color-secondary-text);
+}
+
+.footer-data:hover {
+  color: white;
+}
+.footer-links {
+  display: flex;
+  gap: 0.5em;
 }
