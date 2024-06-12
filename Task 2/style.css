@@ -122,8 +122,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 91%;
-  left: 91%;
+  bottom: 1.3em;
+  right: 1.7em;
   gap: 10px;
   position: fixed;
   background-color: var(--color-pink);
@@ -362,4 +362,25 @@ button {
 .footer-links {
   display: flex;
   gap: 0.5em;
+}
+
+/* Responsive Coding */
+
+@media (max-width: 1332px) {
+  body {
+    background-color: #f05230;
+    width: 100%;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .header {
+    bottom: 0;
+
+    left: 0;
+    object-fit: cover;
+    background-size: cover;
+  }
 }
