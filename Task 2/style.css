@@ -1,4 +1,5 @@
-* {
+html,
+body {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
@@ -38,6 +39,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  width: 100vw;
 }
 
 .links {
@@ -59,13 +61,11 @@
   font-weight: 500;
 }
 .navigation {
-  margin-left: 20.5em;
-  margin-right: 20.5em;
+  padding: 1.2% 15%;
   display: flex;
   justify-content: space-between;
 
   flex-wrap: wrap;
-  padding: 1.2rem;
 }
 
 .actions {
@@ -103,15 +103,16 @@ button {
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   top: 43%;
   left: 45%;
 }
 .title {
   font-size: 60px;
   color: white;
+  margin: 10px;
 }
 .description {
+  margin: 0%;
   position: relative;
   font-size: 25px;
   left: -28%;
@@ -119,15 +120,16 @@ button {
 }
 
 .subscribe-fixed-btn {
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   bottom: 1.3em;
   right: 1.7em;
-  gap: 10px;
+  gap: 2px;
   position: fixed;
   background-color: var(--color-pink);
-  padding: 1em;
+  padding: 0.5em 1em;
   border-radius: 999px;
 }
 
@@ -139,16 +141,17 @@ button {
   color: #e1e1e1;
 }
 
-.content {
+/* .content {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .article {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: left;
 }
 .article-container {
   display: flex;
@@ -157,26 +160,30 @@ button {
   flex-wrap: wrap;
 
   margin-top: 3em;
-  width: 70%;
+  width: 100%;
 }
 .article-image {
   background-image: url(assets/welcome-to-ghost.png);
   background-size: cover;
   height: 400px;
-  width: 800px;
+  width: 788px;
+}
+.article-data {
+  /* border: 1px solid black; */
+  width: 455px;
+  /* background-color: #ff0095; */
+  margin: 0%;
 }
 
-.article-data {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  width: 30%;
-  /* background-color: #ff0095; */
+.article-data p {
+  margin: 0;
+  padding: 0;
 }
 
 .article-data-paragraph {
+  padding-top: 10px;
+  padding-bottom: 20px;
   font-size: 44px;
-
   font-weight: 600;
   color: var(--color-darkmode);
 }
@@ -186,9 +193,10 @@ button {
   color: var(--color-midgrey);
 }
 
-.article-data-footer {
+.article-data-footer p {
+  padding-top: 15px;
   font-size: 14px;
-
+  width: 100%;
   color: var(--color-midgrey);
 }
 
@@ -206,61 +214,62 @@ button {
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5em;
-  width: 69%;
-  padding-left: 2em;
+  width: 68.5%;
 }
 
 .article-card-img img {
   width: 90%;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: center;
-}
+/* Note: Second Section -Starts here */
 
-.wrapper-div {
-  gap: 5em;
-  width: 65.59%;
+.article-card-header {
   display: flex;
-}
-
-.wrapper-header {
-  display: flex;
-  gap: 1em;
-  color: var(--color-midgrey);
+  gap: 10px;
   font-size: 15px;
-  font-weight: bold;
-}
-
-.wrapper-header div {
-  display: flex;
-  gap: 0.1em;
-}
-
-.wrapper-header svg {
-  color: var(--color-pink);
-}
-.wrapper-title {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.wrapper-desc {
-  font-size: 16px;
-  margin-bottom: 0.5em;
-}
-
-.wrapper-footer {
-  margin-top: 0.5em;
-  font-size: 13px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 800;
   color: var(--color-secondary-text);
 }
 
+.article-data-card {
+  margin: 0;
+  padding: 0%;
+}
+
+.article-card-header2 {
+  display: flex;
+  color: var(--color-pink);
+  gap: 2px;
+}
+
+.article-card-title {
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: justify;
+  letter-spacing: -2px;
+}
+
+.article-card-desc {
+  margin-top: 10px;
+  font-style: 16px;
+}
+
+.article-card-footer {
+  margin-top: 15px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-secondary-text);
+}
+
+/* Note: Second Section -Ends here */
+
 .cards-wrapper {
-  width: 65.59%;
+  width: 100%;
+  margin-left: 15.9%;
+  margin-right: 15.9%;
   /* background-color: greenyellow; For Debugging */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -341,9 +350,6 @@ button {
 
 .footer-wrapper {
   font-size: 14px;
-  padding: 3.5rem;
-  padding-left: 9rem;
-  padding-right: 9rem;
   color: white;
   background-color: black;
   height: 16.4em;
@@ -364,23 +370,148 @@ button {
   gap: 0.5em;
 }
 
-/* Responsive Coding */
+.footer-content {
+  width: 100%;
+  margin-left: 10px;
+  margin-left: 10px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
 
-@media (max-width: 1332px) {
-  body {
-    background-color: #f05230;
+/* Note: Responsive Coding */
+
+/* Note: For Screen Size 1297 x 935 */
+
+@media (max-width: 1297) {
+  .article-data {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 1000px;
+  }
+  .article-image {
+    width: 50%;
+    margin: 0;
+  }
+  .content {
+    width: 100vw;
+    background-color: #fecd35;
+  }
+
+  .website {
+    width: 100vw;
+  }
+}
+
+
+
+/* Note: For Screen Size 988 x 870 */
+
+@media (max-width: 988px) {
+
+/* Note: First Section - Starts here */
+.actions{
+
+  display: none;
+}
+
+.links{
+
+  width: 100%;
+}
+
+.data{
+width: 100%;
+margin: 0%;
+display: flex;
+top: 190px;
+left: 0%;
+justify-content: center;
+align-items: center;
+gap: 0;
+text-align: center;
+}
+.title{
+  margin: 0%;
+}
+.description{
+  padding: 0;
+  left: 0%; 
+  margin: 0%;
+}
+
+
+/* Note: First Section - Ends here */
+
+
+
+/* Note: Second Section - Starts here */
+  .wrapper {
+    text-align: justify;
+  }
+
+  .article-image {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .article-card-img {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5em;
+    width: 69%;
+    padding-left: 2em;
+  }
+
+  .article-data {
+    margin-left: 15px;
+    margin-right: 15px;
     width: 100%;
   }
 
-  .navigation {
-    display: none;
+  .cards-wrapper {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    height: 100%;
   }
 
-  .header {
-    bottom: 0;
+  /* Note: Second Section - Ends here */
 
-    left: 0;
-    object-fit: cover;
-    background-size: cover;
+  /* Note: Footer Section - Starts here */
+  .footer-wrapper {
+    width: 100%;
+  }
+  .footer-content {
+    width: 100%;
+    margin-left: 10px;
+    margin-left: 10px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Note: Footer Section - ends here */
+
+@media (max-width: 450px) {
+  .footer-content {
+    width: 100%;
+    margin-left: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .subscribe-fixed-btn {
+    width: 50px;
+    font-size: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
